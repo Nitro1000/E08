@@ -13,7 +13,7 @@ branches:
 cache:
   directories:
     - node_modules
-  before_script: cd front/
+before_script: cd front/
   
 install:
   - npm install -g yarn
@@ -29,4 +29,3 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: main
-
