@@ -2,8 +2,10 @@ language: node_js
 node_js:
   - stable
 
+before_script: 
+  - cd /front
+
 script:
   - npm install -g @vue/cli
   - npm install
-  - CI=false npm run build
   - npm run test:unit
