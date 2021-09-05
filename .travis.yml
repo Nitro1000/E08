@@ -1,3 +1,9 @@
-os: linux
-
 language: node_js
+node_js:
+  - stable
+
+script:
+  - npm install -g @vue/cli
+  - npm install
+  - CI=false npm run build
+  - npm run test:unit
